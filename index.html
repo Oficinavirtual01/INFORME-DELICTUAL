@@ -1,7 +1,10 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resumen Ejecutivo - Análisis Delictual</title>
-<style>:root {
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen Ejecutivo - Análisis Delictual</title>
+  <style>
+    :root {
       --bg-color: #0a2a6b;
       --text-color: #ffffff;
       --card-bg: #1976d2;
@@ -27,33 +30,47 @@
     .button-grid { display: flex; flex-direction: column; gap: 12px; }
     .btn { background-color: var(--button-bg); color: var(--button-text); padding: 15px 20px; border: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; text-decoration: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-    .future-feature { background-color: #333; color: #aaa; cursor: not-allowed; }</style>
-<div class="container">
-  <h1>RESUMEN EJECUTIVO</h1>
-  <div class="subtitle">Análisis Delictual - JPSD I</div>
-  <div class="period">Periodo del 1/11/2025 al 29/12/2025</div>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-title">Tendencia General</div>
-      <div class="indicator down">
-        <span style="font-size: 1.5em; line-height: 1;">▼</span> 20% ((-47))
+    .future-feature { background-color: #333; color: #aaa; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RESUMEN EJECUTIVO</h1>
+    <div class="subtitle">Análisis Delictual - JPSD I</div>
+    <div class="period">Periodo del 1/1/2025 al 31/12/2026</div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-title">Tendencia General</div>
+        <div class="indicator down">
+          <span style="font-size: 1.5em; line-height: 1;">▼</span> 38% ((-811))
+        </div>
+        <div class="indicator-label">Disminución en el total de delitos</div>
       </div>
-      <div class="indicator-label">Disminución en el total de delitos</div>
+
+      <div class="card">
+        <div class="card-title">Indicador de Estabilidad</div>
+        <div class="indicator neutral" style="font-size: 1.5em; line-height: 1;">
+          Media
+        </div>
+        <div class="indicator-label">La fluctuación del delito en la periodo se mantiene media.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Resumen por Jurisdicción</div>
+        
+      </div>
     </div>
-    <div class="card">
-      <div class="card-title">Indicador de Estabilidad</div>
-      <div class="indicator neutral" style="font-size: 1.5em; line-height: 1;">Media</div>
-      <div class="indicator-label">La fluctuación del delito en la periodo se mantiene media.</div>
-    </div>
-    <div class="card">
-      <div class="card-title">Resumen por Jurisdicción</div>
-    </div>
-  </div>
+
   <div class="button-grid">
     <a href="https://oficinavirtual01.github.io/INFO-JPSDI/" class="btn" target="_blank" rel="noopener">Ver Informe Distrital (JPSD I)</a>
     <a href="https://oficinavirtual01.github.io/INFO-DIAGNOSTICO/" class="btn" target="_blank" rel="noopener">Ver Diagnóstico (estabilidad + sugerencias)</a>
     <a href="https://oficinavirtual01.github.io/INFO-CAPITAL/" class="btn" target="_blank" rel="noopener">Ver JPD Capital</a>
     <a href="https://oficinavirtual01.github.io/INFO-GODOY/" class="btn" target="_blank" rel="noopener">Ver JPD Godoy Cruz</a>
   </div>
-  <a href="https://oficinavirtual01.github.io/INFO-SAT/" class="btn future-feature">Ver Patrón Delictivo - Mapa de Calor (próx.)</a>
-</div>
+
+      <a href="https://oficinavirtual01.github.io/INFO-SAT/" class="btn future-feature">Ver Patrón Delictivo - Mapa de Calor (próx.)</a>
+    </div>
+  </div>
+</body>
+</html>
