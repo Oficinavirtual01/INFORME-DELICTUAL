@@ -26,6 +26,9 @@
     .indicator.danger { color: var(--danger-color); }
     .indicator.success { color: var(--success-color); }
     .indicator.neutral { color: var(--neutral-color); }
+    .indicator.up { color: var(--danger-color); }     /* ▲ aumento */
+    .indicator.down { color: var(--success-color); }  /* ▼ baja */
+    .indicator.stable { color: var(--neutral-color); }/* · estable */
     .indicator-label { font-size: 0.9em; color: #eee; margin-top: 5px; }
     .button-grid { display: flex; flex-direction: column; gap: 12px; }
     .btn { background-color: var(--button-bg); color: var(--button-text); padding: 15px 20px; border: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; text-decoration: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
@@ -37,14 +40,16 @@
   <div class="container">
     <h1>RESUMEN EJECUTIVO</h1>
     <div class="subtitle">Análisis Delictual - JPSD I</div>
-    <div class="period">Periodo del 30/1/2026 al 12/2/2026</div>
+    <div class="period">Semanal del 4/2/2026 al 17/2/2026</div>
 
     <div class="card-grid">
       <div class="card">
         <div class="card-title">Tendencia General</div>
         <div class="indicator up">
-          <span style="font-size: 1.5em; line-height: 1;">▲</span> 31% ((+15))
-        </div>
+  <span style="font-size: 1.5em; line-height: 1;">▲</span>
+  10% (+5)
+</div>
+
         <div class="indicator-label">Aumento en el total de delitos</div>
       </div>
 
@@ -53,7 +58,7 @@
         <div class="indicator neutral" style="font-size: 1.5em; line-height: 1;">
           Baja
         </div>
-        <div class="indicator-label">La fluctuación del delito en la periodo se mantiene baja.</div>
+        <div class="indicator-label">La fluctuación del delito en el período se mantiene baja.</div>
       </div>
 
       <div class="card">
@@ -62,15 +67,17 @@
       </div>
     </div>
 
-  <div class="button-grid">
-    <a href="https://oficinavirtual01.github.io/INFO-JPSDI/" class="btn" target="_blank" rel="noopener">Ver Informe Distrital (JPSD I)</a>
-    <a href="https://oficinavirtual01.github.io/INFO-DIAGNOSTICO/" class="btn" target="_blank" rel="noopener">Ver Diagnóstico (estabilidad + sugerencias)</a>
-    <a href="https://oficinavirtual01.github.io/INFO-CAPITAL/" class="btn" target="_blank" rel="noopener">Ver JPD Capital</a>
-    <a href="https://oficinavirtual01.github.io/INFO-GODOY/" class="btn" target="_blank" rel="noopener">Ver JPD Godoy Cruz</a>
-  </div>
+<div class="button-grid">
+  <a href="https://oficinavirtual01.github.io/INFO-JPSDI/" class="btn" target="_blank" rel="noopener">Ver Informe Distrital (JPSD I)</a>
+  <a href="https://oficinavirtual01.github.io/INFO-DIAGNOSTICO/" class="btn" target="_blank" rel="noopener">Ver Diagnóstico (estabilidad + sugerencias)</a>
+  <a href="https://oficinavirtual01.github.io/INFO-CAPITAL/" class="btn" target="_blank" rel="noopener">Ver JPD Capital</a>
+  <a href="https://oficinavirtual01.github.io/INFO-GODOY/" class="btn" target="_blank" rel="noopener">Ver JPD Godoy Cruz</a>
 
-      <a href="https://oficinavirtual01.github.io/INFO-SAT/" class="btn future-feature">Ver Patrón Delictivo - Mapa de Calor (próx.)</a>
-    </div>
+  <a href="https://oficinavirtual01.github.io/INFO-SAT/" class="btn future-feature" aria-disabled="true" onclick="return false;">
+    Ver Patrón Delictivo - Mapa de Calor (próx.)
+  </a>
+</div>
+
   </div>
 </body>
 </html>
